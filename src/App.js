@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './pages/Home'
+import Login from './pages/Login'
+import PageNotFound from './pages/PageNotFound'
+import Profile from './pages/Profile'
+import ProtectedRoutes from './component/ProtectedRoutes'
+
+import store from './redux/store'
+import { Paths } from './Routes'
+
+const App = () => {
+	return (
+		<Provider store={store}>
+			<Router>
+				<Switch>
+					<Route exact path={Paths.HOME} component={Home} />
+					<Route path={Paths.LOGIN} component={Login} />
+					<ProtectedRoutes
+						path={Paths.PROFILE}
+						isloggedIn={true}
+						component={Profile}
+					/>
+					<Route path="*" component={PageNotFound} />
+				</Switch>
+			</Router>
+		</Provider>
+	)
 }
 
-export default App;
+export default App
