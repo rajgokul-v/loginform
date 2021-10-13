@@ -1,9 +1,13 @@
 import { LOGIN, LOGOUT } from './constants'
 
-export const login = () => {
+export const login = ({ name, email, password }) => {
 	return {
 		type: LOGIN,
-		payload: { name: 'Gokul Raj', age: 21, fullName: 'Gokul danger' }
+		payload: {
+			name: name,
+			email: email,
+			password: password
+		}
 	}
 }
 
