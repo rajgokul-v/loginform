@@ -6,7 +6,7 @@ import { logout } from '../redux/action'
 const Profile = ({ name, age }) => {
 	const dispatch = useDispatch()
 
-	const fullName = useSelector((state) => state.fullName)
+	const email = useSelector((state) => state.email)
 
 	const handleLogout = () => {
 		dispatch(logout())
@@ -18,7 +18,7 @@ const Profile = ({ name, age }) => {
 				<div className="pic"></div>
 				<h5>{name}</h5>
 				<h5>{age}</h5>
-				<h5>{fullName}</h5>
+				<h5>{email}</h5>
 			</div>
 			<button id="btn" onClick={handleLogout}>
 				Log out

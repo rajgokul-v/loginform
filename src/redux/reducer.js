@@ -11,8 +11,8 @@ const reducer = (state = initialState, action) => {
 			return {
 				isLoggedIn: true,
 				name: payload.name,
-				age: payload.age,
-				fullName: payload.fullName
+				fullName: payload.fullName,
+				email: payload.email
 			}
 
 		case LOGOUT:
