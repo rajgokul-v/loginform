@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap'
 import { Paths } from '../../Routes'
 
 import '../home/home.css'
+import Timer from './Timer'
 
 const Home = () => {
 	return (
@@ -12,16 +13,16 @@ const Home = () => {
 				<div className="nav-log">Navbar</div>
 				<ul>
 					<li>
-						<a>Home</a>
+						<a href="#">Sign Up</a>
 					</li>
 					<li>
-						<a>Features</a>
+						<a href="#">Features</a>
 					</li>
 					<li>
-						<a>Pricing</a>
+						<a href="#">Pricing</a>
 					</li>
 					<li>
-						<a>About</a>
+						<a href="#">About</a>
 					</li>
 				</ul>
 			</nav>
@@ -30,7 +31,9 @@ const Home = () => {
 					Get Start
 				</Button>
 			</div>
-			<div className="new"></div>
+			<div className="new">
+				<Timer />
+			</div>
 		</div>
 	)
 }
