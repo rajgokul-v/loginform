@@ -2,13 +2,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 import Home from './pages/home/Home.js'
-import Login from './pages/Login'
+
 import PageNotFound from './pages/PageNotFound'
 import Profile from './pages/Profile'
 import ProtectedRoutes from './component/ProtectedRoutes'
 
 import store from './redux/store'
 import { Paths } from './Routes'
+import Login from './pages/form/Login.js'
 
 const App = () => {
 	return (

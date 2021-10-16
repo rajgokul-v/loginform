@@ -18,6 +18,7 @@
 }
 
 nav {
+	display: none;
 	position: fixed;
 	height: 10vh;
 	width: 85rem;

@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Heebo', sans-serif;
+}
+
+.from {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	position: relative;
+	height: 90vh;
+	width: 60vh;
+	margin-top: 4rem;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.from .container h3 {
+	margin-left: 8rem;
+}
+
+.from .container input {
+	margin-top: 20px;
+	margin-left: 1rem;
+	width: 20rem;
+}
+
+.from .container .error {
+	color: rgb(224, 56, 56);
+	font-size: 20px;
+}
+
+.from .container .btn {
+	margin-top: 7rem;
+	margin-left: 1rem;
+}
