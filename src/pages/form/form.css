@@ -4,7 +4,7 @@
 	font-family: 'Heebo', sans-serif;
 }
 
-.from {
+.form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -14,27 +14,43 @@
 	position: relative;
 	height: 90vh;
 	width: 60vh;
-	margin-top: 4rem;
-	border: 1px solid black;
+	top: 3rem;
 	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.from .container h3 {
+.container h3 {
 	margin-left: 8rem;
+	position: relative;
+	top: 10px;
 }
 
-.from .container input {
-	margin-top: 20px;
+.container input {
+	margin-top: 10px;
 	margin-left: 1rem;
+	height: 2.5rem;
 	width: 20rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-left: 2.5rem;
 }
 
-.from .container .error {
+.container .error {
 	color: rgb(224, 56, 56);
-	font-size: 20px;
+	font-size: 13px;
+	position: relative;
+	left: 15px;
 }
 
-.from .container .btn {
-	margin-top: 7rem;
+.container label {
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.container .btn {
+	position: relative;
+	margin-top: 8rem;
 	margin-left: 1rem;
 }

@@ -42,7 +42,7 @@ const Login = () => {
 	}
 
 	return (
-		<div className="from">
+		<div className="form">
 			<div className="container">
 				<h3>Sign In</h3>
 				<form onSubmit={formik.handleSubmit}>
